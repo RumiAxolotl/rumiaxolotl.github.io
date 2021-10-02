@@ -208,88 +208,85 @@
         <a href="https://i.pinimg.com/236x/96/cb/05/96cb05ecca889a49688d77319be810ee.jpg">
             <img style="width:236px;" src="https://i.pinimg.com/236x/96/cb/05/96cb05ecca889a49688d77319be810ee.jpg" />
         </a>
-    <footer>
-        <h3>
-            Contact:
-        </h3>
-        <ul>
-            <li>Email: thienrumi987@gmail.com</li>
-            <li>
-                Facebook:
-                <a href="https://www.facebook.com/Lumi.120602/">Thiện Phạm</a>
-            </li>
-            <li>
-                Instagram:
-                <a href="https://www.instagram.com/lumi_1206/">Lumi_1206</a>
-            </li>
-            <li>
-                Github:
-                <a href="https://github.com/RumiAxolotl">RumiAxolotl</a>
-            </li>
-        </ul>
-    </footer>
 
-    <h2>
-        Today is: <time><span id="datetime"></span></time>
-    </h2>
-    <script>
-        var dt = new Date();
-        document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
-    </script>
+        <div>
+            <h3>You can buy me Coffee:</h3>
+            <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
+            <script type='text/javascript'>kofiwidget2.init('Send Coffee', 'salmon', 'rumiaxolotl'); kofiwidget2.draw();</script>
+        </div>
+        <footer>
+            <h3>
+                Contact:
+            </h3>
+            <ul>
+                <li>Email: thienrumi987@gmail.com</li>
+                <li>
+                    Facebook:
+                    <a href="https://www.facebook.com/Lumi.120602/">Thiện Phạm</a>
+                </li>
+                <li>
+                    Instagram:
+                    <a href="https://www.instagram.com/lumi_1206/">Lumi_1206</a>
+                </li>
+                <li>
+                    Github:
+                    <a href="https://github.com/RumiAxolotl">RumiAxolotl</a>
+                </li>
+            </ul>
+        </footer>
 
-    <!-- Display the countdown timer in an element -->
-    <div class="countdown">
-        <span id="day"></span><span id="hour"></span>h <span id="minute"></span>m
-        <span id="second"></span>s
-    </div>
-    <h2>
-        Countdown to NEWYEAR!
-    </h2>
-    <div>
+        <h2>
+            Today is: <time><span id="datetime"></span></time>
+        </h2>
         <script>
-            kofiWidgetOverlay.draw('rumiaxolotl', {
-                'type': 'floating-chat',
-                'floating-chat.donateButton.text': 'Support me',
-                'floating-chat.donateButton.background-color': '#ff5f5f',
-                'floating-chat.donateButton.text-color': '#fff'
-            });
+            var dt = new Date();
+            document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
         </script>
-    </div>
 
-    <script>
-        // Set the date we're counting down to
-        var countDownDate = new Date("Jan 1, 2022 0:0:0+7UTC").getTime();
+        <!-- Display the countdown timer in an element -->
+        <div class="countdown">
+            <span id="day"></span><span id="hour"></span>h <span id="minute"></span>m
+            <span id="second"></span>s
+        </div>
+        <h2>
+            Countdown to NEWYEAR!
+        </h2>
 
-        // Update the count down every 1 second
-        var x = setInterval(function () {
-            // Get today's date and time
-            var now = new Date().getTime();
 
-            // Find the distance between now and the count down date
-            var distance = countDownDate - now;
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Jan 1, 2022 0:0:0+7UTC").getTime();
 
-            // Time calculations for days, hours, minutes and seconds
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor(
-                (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-            );
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            // Update the count down every 1 second
+            var x = setInterval(function () {
+                // Get today's date and time
+                var now = new Date().getTime();
 
-            // Display the result in the element with id="demo"
-            document.getElementById("day").innerHTML = days + " days ";
-            document.getElementById("hour").innerHTML = hours;
-            document.getElementById("minute").innerHTML = minutes;
-            document.getElementById("second").innerHTML = seconds;
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
 
-            // If the count down is finished, write some text
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("count").innerHTML = "HAPPY NEW YEAR!!";
-            }
-        }, 1000);
-    </script>
-   
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor(
+                    (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+                );
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Display the result in the element with id="demo"
+                document.getElementById("day").innerHTML = days + " days ";
+                document.getElementById("hour").innerHTML = hours;
+                document.getElementById("minute").innerHTML = minutes;
+                document.getElementById("second").innerHTML = seconds;
+
+                // If the count down is finished, write some text
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("count").innerHTML = "HAPPY NEW YEAR!!";
+                }
+            }, 1000);
+        </script>
+
 </body>
 
 </html>
