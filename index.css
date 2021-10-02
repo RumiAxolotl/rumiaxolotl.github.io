@@ -72,5 +72,7 @@ p {
 .donate {
     color: black;
     background-color: salmon;
-    border-radius: 25%;
+    border-radius: 5%;
+    border: none;
+    text-align: center;
 }
