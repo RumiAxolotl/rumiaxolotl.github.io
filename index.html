@@ -22,7 +22,7 @@
             Just a cute Axolotl!
         </h4>
     </div>
-    
+
     <div>
         <h2>
             Some of my poems:
@@ -197,92 +197,93 @@
 
     </div>
 
-        <div>
-            <h2>
-                Some Axolotl Images:
-            </h2>
-
-            <a href="https://i.pinimg.com/564x/c0/1d/91/c01d9106b11f93502819327d27cffbee.jpg">
-                <img style="width:236px;"
-                    src="https://i.pinimg.com/564x/c0/1d/91/c01d9106b11f93502819327d27cffbee.jpg" />
-            </a>
-            <a href="https://i.pinimg.com/236x/96/cb/05/96cb05ecca889a49688d77319be810ee.jpg">
-                <img style="width:236px;"
-                    src="https://i.pinimg.com/236x/96/cb/05/96cb05ecca889a49688d77319be810ee.jpg" />
-            </a>
-        </div>
-
-        <footer>
-            <h3>
-                Contact:
-            </h3>
-            <ul>
-                <li>Email: thienrumi987@gmail.com</li>
-                <li>
-                    Facebook:
-                    <a href="https://www.facebook.com/Lumi.120602/">Thiện Phạm</a>
-                </li>
-                <li>
-                    Instagram:
-                    <a href="https://www.instagram.com/lumi_1206/">Lumi_1206</a>
-                </li>
-                <li>
-                    Github:
-                    <a href="https://github.com/RumiAxolotl">RumiAxolotl</a>
-                </li>
-            </ul>
-        </footer>
-
+    <div>
         <h2>
-            Today is: <time><span id="datetime"></span></time>
-        </h2>
-        <script>
-            var dt = new Date();
-            document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
-        </script>
-
-        <!-- Display the countdown timer in an element -->
-        <div class="countdown">
-            <span id="day"></span><span id="hour"></span>h <span id="minute"></span>m
-            <span id="second"></span>s
-        </div>
-        <h2>
-            Countdown to NEWYEAR!
+            Some Axolotl Images:
         </h2>
 
-        <script>
-            // Set the date we're counting down to
-            var countDownDate = new Date("Jan 1, 2022 0:0:0+7UTC").getTime();
+        <a href="https://i.pinimg.com/564x/c0/1d/91/c01d9106b11f93502819327d27cffbee.jpg">
+            <img style="width:236px;" src="https://i.pinimg.com/564x/c0/1d/91/c01d9106b11f93502819327d27cffbee.jpg" />
+        </a>
+        <a href="https://i.pinimg.com/236x/96/cb/05/96cb05ecca889a49688d77319be810ee.jpg">
+            <img style="width:236px;" src="https://i.pinimg.com/236x/96/cb/05/96cb05ecca889a49688d77319be810ee.jpg" />
+        </a>
+    </div>
+    <div>
+        <h3>You can buy me Coffee: </h3>
+        <button class="donate"> Send Coffe </button>
+    </div>
+    <footer>
+        <h3>
+            Contact:
+        </h3>
+        <ul>
+            <li>Email: thienrumi987@gmail.com</li>
+            <li>
+                Facebook:
+                <a href="https://www.facebook.com/Lumi.120602/">Thiện Phạm</a>
+            </li>
+            <li>
+                Instagram:
+                <a href="https://www.instagram.com/lumi_1206/">Lumi_1206</a>
+            </li>
+            <li>
+                Github:
+                <a href="https://github.com/RumiAxolotl">RumiAxolotl</a>
+            </li>
+        </ul>
+    </footer>
 
-            // Update the count down every 1 second
-            var x = setInterval(function () {
-                // Get today's date and time
-                var now = new Date().getTime();
+    <h2>
+        Today is: <time><span id="datetime"></span></time>
+    </h2>
+    <script>
+        var dt = new Date();
+        document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+    </script>
 
-                // Find the distance between now and the count down date
-                var distance = countDownDate - now;
+    <!-- Display the countdown timer in an element -->
+    <div class="countdown">
+        <span id="day"></span><span id="hour"></span>h <span id="minute"></span>m
+        <span id="second"></span>s
+    </div>
+    <h2>
+        Countdown to NEWYEAR!
+    </h2>
 
-                // Time calculations for days, hours, minutes and seconds
-                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                var hours = Math.floor(
-                    (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-                );
-                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jan 1, 2022 0:0:0+7UTC").getTime();
 
-                // Display the result in the element with id="demo"
-                document.getElementById("day").innerHTML = days + " days ";
-                document.getElementById("hour").innerHTML = hours;
-                document.getElementById("minute").innerHTML = minutes;
-                document.getElementById("second").innerHTML = seconds;
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+            // Get today's date and time
+            var now = new Date().getTime();
 
-                // If the count down is finished, write some text
-                if (distance < 0) {
-                    clearInterval(x);
-                    document.getElementById("count").innerHTML = "HAPPY NEW YEAR!!";
-                }
-            }, 1000);
-        </script>
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor(
+                (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+            );
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="demo"
+            document.getElementById("day").innerHTML = days + " days ";
+            document.getElementById("hour").innerHTML = hours;
+            document.getElementById("minute").innerHTML = minutes;
+            document.getElementById("second").innerHTML = seconds;
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("count").innerHTML = "HAPPY NEW YEAR!!";
+            }
+        }, 1000);
+    </script>
 </body>
 
 </html>
