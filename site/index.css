@@ -9,7 +9,7 @@ body {
 .header {
     width: 50%;
     height: 20%;
-    position: absolute;
+    position: relative;
     top: 3%;
     left: 25%;
 }
@@ -125,4 +125,112 @@ h2 {
     font-size: 60px;
     margin: 0 auto;
     color: black;
+}
+@media only screen and (max-height: 800px) {
+
+    .header {
+        width: 50%;
+        height: 20%;
+        position: relative;
+        top: 3%;
+        left: 25%;
+        display: none;
+    }
+
+    .profile {
+        width: 50%;
+        height: 50%;
+        background-color: rgb(243, 169, 161);
+        border-radius: 2%;
+        border: solid 5px salmon;
+        position: absolute;
+        top: 10%;
+        right: 25%;
+        bottom: 25%;
+    }
+
+
+
+    h2 {
+        margin: 0 auto;
+        text-align: center;
+        color: salmon;
+        font-size: 2rem;
+    }
+
+    .countdown {
+        font-family: 'Odibee Sans', cursive;
+        font-size: 60px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .footer {
+        width: 50%;
+        height: 10%;
+        position: absolute;
+        bottom: 3%;
+        left: 25%;
+        text-align: center;
+        font-family: 'Odibee Sans',
+            cursive;
+        font-size: 60px;
+        margin: 0 auto;
+        color: black;
+    }
+
+}
+@media only screen and (max-width: 1200px) {
+
+    .header {
+        width: 50%;
+        height: 20%;
+        position: relative;
+        top: 25%;
+        left: 25%;
+    }
+
+    .profile {
+        width: 50%;
+        height: 50%;
+        background-color: rgb(243, 169, 161);
+        border-radius: 2%;
+        border: solid 5px salmon;
+        position: absolute;
+        top: 25%;
+        right: 25%;
+        bottom: 25%;
+        display:none;
+    }
+
+
+
+    h2 {
+        margin: 0 auto;
+        text-align: center;
+        color: salmon;
+        font-size: 2rem;
+    }
+
+    .countdown {
+        font-family: 'Odibee Sans', cursive;
+        font-size: 60px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .footer {
+        width: 50%;
+        height: 10%;
+        position: absolute;
+        bottom: 3%;
+        left: 25%;
+        text-align: center;
+        font-family: 'Odibee Sans',
+            cursive;
+        font-size: 60px;
+        margin: 0 auto;
+        color: black;
+    }
+
 }
