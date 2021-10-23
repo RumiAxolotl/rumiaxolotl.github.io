@@ -63,3 +63,9 @@ p {
     margin: 0;
     color: seagreen;
 }
+
+@media only screen and (max-width: 768px){
+    #images {
+        display: none;
+    }
+}
