@@ -1,0 +1,74 @@
+body {
+    width: 99vw;
+    height: 98vh;
+    background-color: #fff;
+    background-image: url("./background.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+#container {
+    width: 50%;
+    height: 50%;
+    top: 25%;
+    left: 25%;
+    position: fixed;
+}
+
+#title {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    font-size: 6vmin;
+    font-family: 'Lobster', cursive;
+    color: #000;
+}
+
+#options {
+    width: 100%;
+    height: 79%;
+    display: flex;
+    position: relative;
+}
+
+#yes {
+    width: 20%;
+    height: 20%;
+    margin: 10% auto;
+    background-color: salmon;
+    border-radius: 5%;
+    position: absolute;
+    bottom: 50%;
+    left: 25%;
+
+}
+
+#no {
+    width: 20%;
+    height: 20%;
+    margin: 10% auto;
+    background-color: greenyellow;
+    border-radius: 5%;
+    position: absolute;
+    bottom: 50%;
+    right: 25%;
+
+}
+
+#newContainer {
+    display: none;
+    width: 50%;
+    height: 50%;
+    top: 25%;
+    left: 25%;
+    position: fixed;
+
+}
+
+#sticker {
+    width: 100%;
+    height: 50%;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+}
