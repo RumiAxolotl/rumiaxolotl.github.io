@@ -18,7 +18,7 @@ body {
 
 }
 
-.container {
+.container *{
     margin: 2.25rem 0 0.75rem;
 }
 
