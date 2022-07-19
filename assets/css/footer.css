@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+}
+
+.footer{
+    width: 100%;
+    height: 2rem;
+    padding-bottom: 0.5rem;
+    margin: 0 auto;
+    text-align: center;
+    background-color: dimgrey;
+}
+
+.author{
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    font-family: Verdana, sans-serif;
+    color: black;
+    text-align: center;
+}
