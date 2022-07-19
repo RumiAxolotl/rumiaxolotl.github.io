@@ -18,8 +18,19 @@ body {
         cursive;
     color: black;
     padding: 0;
-    margin: 2rem 0;
     line-height: 1.5;
     max-width: 50%;
     margin: 2rem auto;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.poems-title {
+    font-size: 1.8rem;
+    max-width: 50%;
+    margin: 2rem auto;
+    font-size: 3rem;
+    font-family: 'Pacifico',
+        cursive;
+        color: salmon;
 }
