@@ -15,10 +15,15 @@ body {
     background-image: url("https://i.pinimg.com/564x/4a/72/e5/4a72e5aa201ba148b0eb277aeccc4045.jpg");
     background-attachment: fixed;
     background-size: 100% 100%;
+
+}
+
+.container {
     margin: 2.25rem 0 0.75rem;
 }
 
-h1, h3{ 
+h1,
+h3 {
     color: black;
 }
 
@@ -41,6 +46,7 @@ p {
     margin: 0;
     color: seagreen;
 }
+
 /* fix to smartphone screen */
 @media only screen and (max-width: 600px) {
     .poem {
