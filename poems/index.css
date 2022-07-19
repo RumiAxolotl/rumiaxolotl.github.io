@@ -46,17 +46,6 @@ p {
     margin: 0;
 }
 
-
-.avatar {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border: 1px solid black;
-    float: right;
-}
-
-
 .poem {
     font-family: "Odibee Sans", cursive;
     font-size: 25px;
@@ -65,10 +54,6 @@ p {
 }
 /* fix to smartphone screen */
 @media only screen and (max-width: 600px) {
-    .avatar {
-        float: none;
-        margin: 0 auto;
-    }
     .poem {
         font-size: 20px;
     }
