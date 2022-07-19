@@ -3,10 +3,6 @@ html {
 }
 
 body {
-    font-size: 1.5rem;
-    padding-top: 1rem;
-    max-width: 50%;
-    margin: 0 auto;
     background-image: url("https://i.pinimg.com/564x/4a/72/e5/4a72e5aa201ba148b0eb277aeccc4045.jpg");
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -23,10 +19,7 @@ body {
     color: black;
     padding: 0;
     margin: 2rem 0;
-}
-
-.footer{
-    width: 100%;
-    display: block;
-    
+    line-height: 1.5;
+    max-width: 50%;
+    margin: 2rem auto;
 }
