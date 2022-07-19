@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+}
+
+.header {
+    width: 100%;
+    height: 4rem;
+    padding-top: 0.5rem;
+    background-color: rgba(108, 233, 255, 0.05);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header-greeting {
+    width: 50%;
+    height: 100%;
+    font-size: 2rem;
+    font-family: 'Indie Flower', cursive;
+    color: black;
+    float: left;
+    text-align: center;
+}
+
+
+.header-buttons-container {
+    width: 50%;
+    height: 100%;
+    float: right;
+    display: inline;
+    font-size: 1.5rem;
+    font-family: Verdana, sans-serif;
+
+
+}
+
+.header-buttons-home a {
+    width: 50%;
+    height: 100%;
+    float: left;
+    font-size: 2rem;
+    text-decoration: none;
+    color: rgb(255, 115, 100);
+    font-weight: bolder;
+}
+
+.header-buttons-poems a {
+    width: 50%;
+    height: 100%;
+    float: right;
+    font-size: 2rem;
+    text-decoration: none;
+    color: rgb(255, 115, 100);
+    font-weight: bolder;
+}
+
+.header-buttons-home a:hover,
+.header-buttons-poems a:hover {
+    border-bottom: 2px solid red;
+}
