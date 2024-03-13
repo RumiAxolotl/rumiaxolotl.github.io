@@ -1,0 +1,151 @@
+:root {
+    /* Mocha Palette */
+    --color-rosewater: #F5E0DC;
+    --color-flamingo: #F2CDCD;
+    --color-pink: #F5C2E7;
+    --color-mauve: #CBA6F7;
+    --color-red: #F38BA8;
+    --color-maroon: #EBA0AC;
+    --color-peach: #FAB387;
+    --color-yellow: #F9E2AF;
+    --color-green: #A6E3A1;
+    --color-teal: #94E2D5;
+    --color-sky: #89DCEB;
+    --color-sapphire: #74C7EC;
+    --color-blue: #89B4FA;
+    --color-lavender: #B4BEFE;
+
+    /* Base Colors */
+    --color-base: #1E1E2E;
+    --color-mantle: #181825;
+    --color-surface: #313244;
+    --color-overlay: #414559;
+    --color-subtext: #6E6C7E;
+    --color-text: #CDD6F4;
+
+
+}
+
+/* Set the base font size to 16px */
+html {
+    font-size: 16px;
+}
+
+section {
+    padding-top: 70px;
+    /* Adjust based on the height of your navbar */
+    margin-top: -70px;
+    /* Should be the same as padding-top */
+}
+
+
+* {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-base);
+    color: var(--color-text);
+}
+
+
+
+header {
+    background-color: var(--color-surface);
+    display: inline-block;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 500;
+    /* Ensures header stays above other content */
+}
+
+
+
+
+
+section {
+    text-align: center;
+}
+
+
+
+.profile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.profile-name {
+    width: 60%;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.profile-name>h3 {
+    font-size: 5rem;
+    color: var(--color-red);
+    margin-bottom: 0;
+    background: linear-gradient(-45deg, var(--color-red), var(--color-maroon), var(--color-sky), var(--color-rosewater), var(--color-flamingo), var(--color-pink), var(--color-mauve), var(--color-peach), var(--color-yellow), var(--color-green), var(--color-teal), var(--color-sapphire), var(--color-blue), var(--color-lavender));
+    background-size: 400% 400%;
+    animation: gradient-animation 10s ease infinite;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.profile-name>h4 {
+    font-size: 3.5rem;
+    color: var(--color-lavender);
+    margin: 0.2rem 0 0.2rem 0;
+}
+
+.about-content {
+    color: var(--color-text);
+    text-align: justify;
+    font-size: 1.5rem;
+    font-family: 'Noto Serif', serif;
+    padding-right: 5rem;
+    padding-left: 5rem;
+
+
+}
+
+
+.profile-picture {
+    border-radius: 50%;
+    display: block;
+    width: 20%;
+    margin: auto;
+    /* Adjust as needed */
+}
+
+
+
+
+
+footer {
+    padding: 1rem;
+    background-color: var(--color-surface);
+    text-align: center;
+    color: var(--color-text);
+    width: 100%;
+}
