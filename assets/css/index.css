@@ -1,3 +1,4 @@
+/* Catppuccin Mocha Palette (như bạn đã cung cấp) */
 :root {
     /* Mocha Palette */
     --color-rosewater: #F5E0DC;
@@ -22,130 +23,139 @@
     --color-overlay: #414559;
     --color-subtext: #6E6C7E;
     --color-text: #CDD6F4;
-
-
-}
-
-/* Set the base font size to 16px */
-html {
-    font-size: 16px;
-}
-
-section {
-    padding-top: 70px;
-    /* Adjust based on the height of your navbar */
-    margin-top: -70px;
-    /* Should be the same as padding-top */
 }
 
 
-* {
-    box-sizing: border-box;
-    width: 100%;
-}
-
+/* Font Awesome (nếu bạn dùng) */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: var(--color-base);
-    color: var(--color-text);
-}
-
-
-
-header {
-    background-color: var(--color-surface);
-    display: inline-block;
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 500;
-    /* Ensures header stays above other content */
-}
-
-
-
-
-
-section {
-    text-align: center;
-}
-
-
-
-.profile {
+    font-family: sans-serif; /* Chọn font chữ */
+    background-color: var(--color-base); /* Sử dụng biến màu nền */
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    flex-direction: row;
+    min-height: 100vh;
+    margin: 0;
 }
 
-.profile-name {
-    width: 60%;
+.container {
+    position: relative;
+    width: 500px;  /* Điều chỉnh theo ảnh */
+    height: 500px; /* Điều chỉnh theo ảnh */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@keyframes gradient-animation {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-.profile-name>h3 {
-    font-size: 5rem;
-    color: var(--color-red);
-    margin-bottom: 0;
-    background: linear-gradient(-45deg, var(--color-red), var(--color-maroon), var(--color-sky), var(--color-rosewater), var(--color-flamingo), var(--color-pink), var(--color-mauve), var(--color-peach), var(--color-yellow), var(--color-green), var(--color-teal), var(--color-sapphire), var(--color-blue), var(--color-lavender));
-    background-size: 400% 400%;
-    animation: gradient-animation 10s ease infinite;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.profile-name>h4 {
-    font-size: 3.5rem;
-    color: var(--color-lavender);
-    margin: 0.2rem 0 0.2rem 0;
-}
-
-.about-content {
-    color: var(--color-text);
-    text-align: justify;
-    font-size: 1.5rem;
-    font-family: 'Noto Serif', serif;
-    padding-right: 5rem;
-    padding-left: 5rem;
-
-
-}
-
-
-.profile-picture {
+.profile-image {
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    display: block;
-    width: 20%;
-    margin: auto;
-    /* Adjust as needed */
+    object-fit: cover;
+    border: 5px solid var(--color-rosewater); /* Viền ảnh */
+    z-index: 1;
+    position: relative;
+    animation: rainbow-border 5s linear infinite; /* Thêm animation */
 }
 
+@keyframes rainbow-border {
+    0% {
+        border-color: var(--color-rosewater);
+    }
+    14% {
+        border-color: var(--color-flamingo);
+    }
+    28% {
+        border-color: var(--color-pink);
+    }
+    42% {
+        border-color: var(--color-mauve);
+    }
+    57% {
+        border-color: var(--color-red);
+    }
+    71% {
+        border-color: var(--color-maroon);
+    }
+    85% {
+        border-color: var(--color-peach);
+    }
+    100% {
+        border-color: var(--color-rosewater);
+    }
+}
 
+.profile-image {
+    /* ... các thuộc tính khác ... */
+    transition: transform 0.3s ease; /* Thêm transition */
+}
 
+.profile-image:hover {
+    transform: scale(1.1); /* Phóng to 110% */
+}
 
-
-footer {
-    padding: 1rem;
-    background-color: var(--color-surface);
-    text-align: center;
-    color: var(--color-text);
+.bubbles {
+    position: absolute;
     width: 100%;
+    height: 100%;
 }
+
+.bubble {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    /* Gradient cho bong bóng */
+    background: linear-gradient(135deg, var(--color-lavender), var(--color-blue));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-base); /* Màu icon */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease; /* Thêm transition cho background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+    /* Tooltip styles */
+    &::before {
+      content: attr(data-text);
+      position: absolute;
+      bottom: -35px; /* Điều chỉnh vị trí */
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: var(--color-overlay);
+      color: var(--color-text);
+      padding: 5px 10px;
+      border-radius: 5px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      white-space: nowrap;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      z-index: 2; /* Đảm bảo tooltip nằm trên */
+    }
+
+     &:hover::before {
+        opacity: 1;
+    }
+}
+
+.bubble:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Đổi màu gradient khi hover */
+    background: linear-gradient(135deg, var(--color-blue), var(--color-mauve));
+}
+
+.bubbles ul {
+    list-style: none;  /* Loại bỏ dấu chấm của danh sách */
+    padding: 0;        /* Loại bỏ padding mặc định */
+    margin: 0;         /* Loại bỏ margin mặc định */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.bubbles li {
+    display: inline-block;
+}
+
+
