@@ -5,7 +5,7 @@ export default function Starfield() {
 
   useEffect(() => {
     const field = fieldRef.current;
-    const count = Math.min(90, Math.floor(window.innerWidth / 14));
+    const count = Math.min(45, Math.floor(window.innerWidth / 24));
     const frag = document.createDocumentFragment();
 
     for (let i = 0; i < count; i++) {

@@ -10,7 +10,7 @@ export default function Hero() {
         <p className="eyebrow">Hello, I&apos;m</p>
         <h1 className="name">RumiAxolotl</h1>
 
-        <p className="quote">Smile Alot Liek An Axolotl</p>
+        <p className="quote">Smile Alot Like An Axolotl</p>
         <p className="sub">Welcome to my little corner of the internet.</p>
 
         <div className="cta">
