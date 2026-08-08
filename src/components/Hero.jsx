@@ -14,10 +14,10 @@ export default function Hero() {
         <p className="sub">Welcome to my little corner of the internet.</p>
 
         <div className="cta">
-          <a className="btn btn-primary" href="https://rumiaxolotl.github.io/portfolio/">
+          <a className="btn btn-primary" href="https://portfolio.rumiaxolotl.site/">
             <i className="fa-solid fa-briefcase" /> View My Portfolio
           </a>
-          <a className="btn btn-ghost" href="https://rumiaxolotl.xyz/portfolio/#contact">
+          <a className="btn btn-ghost" href="https://portfolio.rumiaxolotl.site/#contact">
             <i className="fa-solid fa-envelope" /> Contact Me
           </a>
         </div>
